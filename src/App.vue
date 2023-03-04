@@ -1,4 +1,21 @@
 <template>
-  hello world
+  <NavBar />
+  <RouterView />
 </template>
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import NavBar from '@/components/NavBar.vue';
+import { watch } from 'vue';
+import { useUxStore } from '@/stores';
+
+const uxStore = useUxStore();
+watch(
+  () => uxStore.displayType,
+  (display) => {
+    if (display === 'calcApp') {
+      document.documentElement.setAttribute('data-theme', 'light');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  }
+);
+</script>

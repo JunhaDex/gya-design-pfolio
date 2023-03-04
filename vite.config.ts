@@ -11,5 +11,18 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `
+        @import "@/assets/sass/variables.scss";
+        @import "@/assets/sass/mixins.scss";
+        `
+      }
+    }
+  },
+  server: {
+    port: 3000
   }
 })

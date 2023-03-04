@@ -1,0 +1,22 @@
+@import "variables";
+
+@mixin font-face() {
+  @font-face {
+    font-family: "Source Sans Pro";
+    src: url("@/assets/fonts/SourceSansPro-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "Source Sans Pro";
+    src: url("@/assets/fonts/SourceSansPro-ExtraLight.ttf");
+    font-style: normal;
+    font-weight: 200;
+  }
+  @font-face {
+    font-family: "Source Sans Pro";
+    src: url("@/assets/fonts/SourceSansPro-Black.ttf");
+    font-style: normal;
+    font-weight: 700;
+  }
+}
