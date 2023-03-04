@@ -3,7 +3,7 @@
   <RouterView />
 </template>
 <script lang="ts" setup>
-import NavBar from '@/components/NavBar.vue';
+import NavBar from '@/components/surfaces/NavBar.vue';
 import { watch } from 'vue';
 import { useUxStore } from '@/stores';
 

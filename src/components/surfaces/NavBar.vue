@@ -11,7 +11,7 @@
       </a>
       <ul class="nav-menu">
         <li>
-          <router-link to="/about">about</router-link>
+          <router-link to="/about">About</router-link>
         </li>
       </ul>
     </div>
@@ -26,11 +26,19 @@ const displayType = computed(() => uxStore.displayType);
 </script>
 <style lang="scss" scoped>
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+
   .header-contents {
     height: 210px;
     padding: 0 55px;
     display: flex;
     justify-content: space-between;
+    max-width: 1450px;
+    margin: 0 auto;
     align-items: center;
 
     .nav-menu {
@@ -38,6 +46,7 @@ header {
 
       li {
         cursor: pointer;
+        font-size: 1.3rem;
       }
 
       li > a {

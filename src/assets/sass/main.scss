@@ -16,4 +16,11 @@ body {
   font-family: "Source Sans Pro", serif;
   background-color: var(--background-color);
   color: var(--text-color);
+  margin: 0;
+  min-width: 1580px;
+
+  #app {
+    margin: 0 auto;
+    max-width: 1600px;
+  }
 }
